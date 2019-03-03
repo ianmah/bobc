@@ -507,7 +507,7 @@ table {
 
 @font-face {
   font-family: "Duke Fill";
-  src: url("../assets/fonts/dukefill.otf") format("otf"); }
+  src: url("../assets/fonts/dukefill.otf") format("otf"), url("../assets/fonts/dukefill.woff") format("woff"), url("../assets/fonts/dukefill.woff2") format("woff2"); }
 html, body {
   height: 100%;
   width: 100%; }
