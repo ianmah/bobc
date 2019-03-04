@@ -510,7 +510,8 @@ table {
   src: url("../assets/fonts/dukefill.otf") format("otf"), url("../assets/fonts/dukefill.woff") format("woff"), url("../assets/fonts/dukefill.woff2") format("woff2"); }
 html, body {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  scroll-behavior: smooth; }
 
 .site-header {
   border-top: none;
@@ -534,26 +535,58 @@ html, body {
   background-position: center;
   background-size: cover;
   text-align: center;
-  z-index: -1; }
+  z-index: 0;
+  position: relative; }
 
 .hero-content {
   max-width: 860px;
-  margin: 0;
+  width: 90%;
+  height: 50%;
+  margin: auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.hero-mobile {
+  margin: 20px;
+  text-align: center;
+  display: none; }
+
+.hero-mobile img {
+  max-width: 130px;
+  margin: auto;
+  margin-bottom: 30px; }
+
+.button {
+  margin: auto;
+  text-align: center;
+  font-family: "Duke Fill";
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 32px;
+  color: #003372;
+  background-color: white;
+  width: 60%; }
 
 @media screen and (max-width: 900px) {
+  .hero-mobile {
+    display: block; }
+
   .hero-content {
-    max-width: 80%; } }
+    height: 550px; }
+
+  .hero-img {
+    display: none; } }
 .section {
   padding: 60px 10px; }
 
 .section-title {
   font-family: "Duke Fill";
   text-transform: uppercase;
-  font-style: italic;
+  transform: skew(-10deg);
+  -webkit-transform: skew(-10deg);
   font-size: 56px;
   color: #003372;
   text-align: center; }
