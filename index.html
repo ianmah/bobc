@@ -14,7 +14,8 @@
 {"url":"/","headline":"Battle of BC","name":"Battle of BC","@type":"WebSite","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://use.typekit.net/vtu3tvs.css">
-  <link rel="stylesheet" href="./assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Battle of BC" /></head>
+  <link rel="stylesheet" href="./assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Battle of BC" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="#">
@@ -37,27 +38,18 @@
 
           <div class="hero-content">
             <img class="hero-img" src="./assets/covercontent.png">
+            <div class="desktop buttons-desktop">
+              <br>
+
+              <a class="button" href="#">Brackets  </a>
+              <a class="button" href="#">Livestream</a>
+            </div>
             <div class="hero-mobile">
               <img src="./assets/logow.png">
-              <div class="button">
-                    <a href="#welcome">Welcome</a>
-                  </div>
-                <br><div class="button">
-                    <a href="#venue">Venue</a>
-                  </div>
-                <br><div class="button">
-                    <a href="#rules">Rules</a>
-                  </div>
-                <br><div class="button">
-                    <a href="#schedule">Schedule</a>
-                  </div>
-                <br><div class="button">
-                    <a href="#sponsors">Sponsors</a>
-                  </div>
-                <br><div class="button">
-                    <a href="#notable attendees">Notable Attendees</a>
-                  </div>
-                <br></div>
+
+              <a class="button" href="#">Brackets  </a>
+              <a class="button" href="#">Livestream</a>
+              <a class="button" href="#welcome">Welcome</a><a class="button" href="#venue">Venue</a><a class="button" href="#rules">Rules</a><a class="button" href="#schedule">Schedule</a><a class="button" href="#sponsors">Sponsors</a><a class="button" href="#notable attendees">Notable Attendees</a></div>
           </div>
 
 
@@ -106,7 +98,124 @@
               Schedule
             <!-- </a> -->
           </h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <script>
+$(document).ready(function(){
+  $(".daytwo").hide();
+  $(".dayone-button").click(function(){
+    $(".dayone").fadeIn(250);
+    $(".daytwo").fadeOut(250);
+  })
+  $(".daytwo-button").click(function(){
+    $(".dayone").fadeOut(250);
+    $(".daytwo").fadeIn(250);
+  });
+});
+</script>
+
+<div class="day-buttons">
+  <a class="dayone-button day-button">Day One  </a>
+  <a class="daytwo-button day-button">Day Two  </a>
+</div>
+
+<br>
+
+<div class="isg-agenda__content dayone">
+   <ul>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">9:00 AM</span>
+            <div>Venue Opens</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">11:00 AM</span>
+            <div>Wave A</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">1:00 PM</span>
+            <div>Wave B</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">3:00 PM</span>
+            <div>Wave C</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">5:00 PM</span>
+            <div>Wave D</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">7:00 PM</span>
+            <div>Doubles Finals</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">9:00 PM</span>
+            <div>Super Smashed Social</div>
+         </div>
+      </li>
+   </ul>
+</div>
+
+<div class="isg-agenda__content daytwo">
+   <ul>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">10:00 AM</span>
+            <div>Venue Opens</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">11:00 AM</span>
+            <div>Singles Finals</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">3:00 PM</span>
+            <div>Melee Top 8</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">6:00 PM</span>
+            <div>Ultimate Top 8</div>
+         </div>
+      </li>
+   </ul>
+</div>
 
         </div><div class="section" id="sponsors">
           <h3 class="section-title">
