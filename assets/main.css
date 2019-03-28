@@ -626,7 +626,7 @@ html, body {
   color: white;
   cursor: pointer; }
 
-.day-button:hover {
+.day-button:hover, .day-button:focus {
   background-color: #eaa001;
   transition-duration: 250ms;
   color: #003372; }

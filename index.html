@@ -22,6 +22,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#003372">
   <meta name="msapplication-TileColor" content="#003372">
   <meta name="theme-color" content="#ffffff">
+
 </head>
 <body><header class="site-header" role="banner">
 
@@ -38,7 +39,7 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="#welcome">Welcome</a><a class="page-link" href="#venue">Venue</a><a class="page-link" href="#rules">Rules</a><a class="page-link" href="#livestreams">Livestreams</a><a class="page-link" href="#schedule">Schedule</a><a class="page-link" href="#sponsors">Sponsors</a><a class="page-link" href="#notable attendees">Notable Attendees</a></div>
+          <a class="page-link" href="#welcome">Welcome</a><a class="page-link" href="#venue">Venue</a><a class="page-link" href="#rules">Rules</a><a class="page-link" href="#livestreams">Livestreams</a><a class="page-link" href="#schedule">Schedule</a><a class="page-link" href="#sponsors">Sponsors</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content"><div class="hero">
@@ -57,7 +58,7 @@
 
               <a class="button" target="_blank" href="https://smash.gg/tournament/battle-of-bc-3/events">Brackets</a>
               <a class="gold button" target="_blank"  href="https://smash.gg/tournament/battle-of-bc-3/manage">Dashboard</a>
-              <a class="button" href="#welcome">Welcome</a><a class="button" href="#venue">Venue</a><a class="button" href="#rules">Rules</a><a class="button" href="#livestreams">Livestreams</a><a class="button" href="#schedule">Schedule</a><a class="button" href="#sponsors">Sponsors</a><a class="button" href="#notable attendees">Notable Attendees</a></div>
+              <a class="button" href="#welcome">Welcome</a><a class="button" href="#venue">Venue</a><a class="button" href="#rules">Rules</a><a class="button" href="#livestreams">Livestreams</a><a class="button" href="#schedule">Schedule</a><a class="button" href="#sponsors">Sponsors</a></div>
           </div>
 
 
@@ -146,7 +147,7 @@ $(document).ready(function(){
 </script>
 
 <div class="day-buttons">
-  <a class="dayone-button day-button">Day One</a>
+  <a class="dayone-button day-button" id="myButton">Day One</a>
   <a class="daytwo-button day-button">Day Two</a>
 </div>
 
@@ -258,14 +259,6 @@ $(document).ready(function(){
           </h3>
               A bunch of sponsors
 
-        </div><div class="section" id="notable attendees">
-          <h3 class="section-title">
-            <!-- <a class="post-link" href=""> -->
-              Notable Attendees
-            <!-- </a> -->
-          </h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
         </div></ul></div>
 
       </div>
@@ -296,6 +289,11 @@ $(document).ready(function(){
   </div>
 
 </footer>
+
+
+  <script>
+    document.getElementById("myButton").focus();
+  </script>
 </body>
 
 </html>
