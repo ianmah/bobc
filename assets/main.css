@@ -721,11 +721,20 @@ a:hover {
 @media screen and (max-width: 900px) {
   .welcome-stats li {
     float: none; } }
-.img-div {
+.ctr-div {
   text-align: center; }
 
 .map-img {
   margin: auto; }
+
+.sponsor-img {
+  display: inline-block;
+  width: 260px;
+  padding: 40px;
+  margin: auto; }
+
+.sponsor-img img {
+  max-height: 100px; }
 
 /**
  * Wrapper
