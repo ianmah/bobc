@@ -730,7 +730,7 @@ a:hover {
 
 .sponsor-img {
   display: inline-block;
-  width: 260px;
+  max-width: 260px;
   padding: 40px;
   margin: auto; }
 
