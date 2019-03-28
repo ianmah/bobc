@@ -566,9 +566,9 @@ html, body {
 
 .buttons-desktop {
   margin: auto;
-  width: 50%; }
+  width: 75%; }
 
-.button {
+.button, .button:visited {
   margin: 8px 8px;
   text-align: center;
   font-family: "Duke Fill";
@@ -578,9 +578,17 @@ html, body {
   color: #003372;
   transition-duration: 250ms;
   background-color: white;
-  width: 40%;
+  width: 30%;
   float: left;
   display: block; }
+
+.gold {
+  color: #003372 !important;
+  background-color: #eaa001 !important; }
+
+.gold:hover {
+  background-color: #003372 !important;
+  color: white !important; }
 
 .button:hover {
   background-color: #003372;
@@ -623,6 +631,7 @@ a:hover {
 
 @media screen and (max-width: 900px) {
   .button {
+    width: 60%;
     margin: 10px auto;
     float: none; }
 
