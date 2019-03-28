@@ -136,10 +136,14 @@
 $(document).ready(function(){
   $(".daytwo").hide();
   $(".dayone-button").click(function(){
+    $(".dayone-button").toggleClass("active-day");
+    $(".daytwo-button").toggleClass("active-day");
     $(".dayone").fadeIn(250);
     $(".daytwo").fadeOut(250);
   })
   $(".daytwo-button").click(function(){
+    $(".dayone-button").toggleClass("active-day");
+    $(".daytwo-button").toggleClass("active-day");
     $(".dayone").fadeOut(250);
     $(".daytwo").fadeIn(250);
   });
@@ -147,7 +151,7 @@ $(document).ready(function(){
 </script>
 
 <div class="day-buttons">
-  <a class="dayone-button day-button" id="myButton">Day One</a>
+  <a class="active-day dayone-button day-button" id="myButton">Day One</a>
   <a class="daytwo-button day-button">Day Two</a>
 </div>
 
@@ -300,11 +304,6 @@ $(document).ready(function(){
   </div>
 
 </footer>
-
-
-  <script>
-    document.getElementById("myButton").focus();
-  </script>
 </body>
 
 </html>
