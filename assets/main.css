@@ -602,9 +602,14 @@ html, body {
 .day-buttons {
   margin: auto;
   margin-bottom: 40px;
-  width: 292px; }
+  width: 292px;
+  text-align: center; }
 
-.day-button {
+.day-buttons h2 {
+  margin-top: 30px;
+  margin-bottom: 0px; }
+
+.day-button, .day-button:visited {
   margin: 8px 8px;
   text-align: center;
   font-family: "Duke Fill";
@@ -696,7 +701,8 @@ a:hover {
 .welcome-stats li {
   line-height: 1;
   float: left;
-  padding: 30px 75px;
+  width: 150px;
+  padding: 30px 65px;
   font-size: 56px;
   color: #eaa001; }
 
