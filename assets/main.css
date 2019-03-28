@@ -703,6 +703,12 @@ a:hover {
 @media screen and (max-width: 900px) {
   .welcome-stats li {
     float: none; } }
+.img-div {
+  text-align: center; }
+
+.map-img {
+  margin: auto; }
+
 /**
  * Wrapper
  */
@@ -839,3 +845,6 @@ a:hover {
 
 .isg-agenda__marker[data-color*='theme-tertiary'] img {
   border-color: #eaa001; }
+
+.credit {
+  font-size: 10px; }

@@ -7,14 +7,15 @@
 <meta name="generator" content="Jekyll v3.8.5" />
 <meta property="og:title" content="Schedule" />
 <meta property="og:locale" content="en_US" />
-<link rel="canonical" href="/schedule.html" />
-<meta property="og:url" content="/schedule.html" />
+<link rel="canonical" href="http://localhost:4000/schedule.html" />
+<meta property="og:url" content="http://localhost:4000/schedule.html" />
 <meta property="og:site_name" content="Battle of BC" />
 <script type="application/ld+json">
-{"url":"/schedule.html","headline":"Schedule","@type":"WebPage","@context":"http://schema.org"}</script>
+{"url":"http://localhost:4000/schedule.html","headline":"Schedule","@type":"WebPage","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/icon.png"}},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="https://use.typekit.net/vtu3tvs.css">
-  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Battle of BC" /></head>
+  <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Battle of BC" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 <body><header class="site-header" role="banner">
 
   <div class="wrapper"><a class="site-title" rel="author" href="#">
@@ -41,7 +42,124 @@
   </header>
 
   <div class="post-content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <script>
+$(document).ready(function(){
+  $(".daytwo").hide();
+  $(".dayone-button").click(function(){
+    $(".dayone").fadeIn(250);
+    $(".daytwo").fadeOut(250);
+  })
+  $(".daytwo-button").click(function(){
+    $(".dayone").fadeOut(250);
+    $(".daytwo").fadeIn(250);
+  });
+});
+</script>
+
+<div class="day-buttons">
+  <a class="dayone-button day-button">Day One  </a>
+  <a class="daytwo-button day-button">Day Two  </a>
+</div>
+
+<br>
+
+<div class="isg-agenda__content dayone">
+   <ul>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">9:00 AM</span>
+            <div>Venue Opens</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">11:00 AM</span>
+            <div>Wave A</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">1:00 PM</span>
+            <div>Wave B</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">3:00 PM</span>
+            <div>Wave C</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">5:00 PM</span>
+            <div>Wave D</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">7:00 PM</span>
+            <div>Doubles Finals</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">9:00 PM</span>
+            <div>Super Smashed Social</div>
+         </div>
+      </li>
+   </ul>
+</div>
+
+<div class="isg-agenda__content daytwo">
+   <ul>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">10:00 AM</span>
+            <div>Venue Opens</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">11:00 AM</span>
+            <div>Singles Finals</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">3:00 PM</span>
+            <div>Melee Top 8</div>
+         </div>
+      </li>
+      <li>
+         <div class="isg-agenda__marker" data-color="theme-base">
+         </div>
+         <div class="isg-agenda__item-content">
+            <span class="isg-agenda__time">6:00 PM</span>
+            <div>Ultimate Top 8</div>
+         </div>
+      </li>
+   </ul>
+</div>
 
   </div>
 
@@ -58,16 +176,19 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Battle of BC</li></ul>
+          <li class="p-name"><!-- Battle of BC --><ul class="social-media-list"><li><a href="https://www.twitter.com/battleofbc"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">battleofbc</span></a></li></ul>
+</li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.twitter.com/battleofbc"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">battleofbc</span></a></li></ul>
-</div>
+      <!-- <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.twitter.com/battleofbc"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">battleofbc</span></a></li></ul>
+</div> -->
 
       <div class="footer-col footer-col-3">
         <p></p>
       </div>
     </div>
+
+    <p class="credit">Designed and Built by <a href="http://ianmah.com/" target="_blank">Ian Mah</a>.</p>
 
   </div>
 
