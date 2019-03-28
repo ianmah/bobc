@@ -649,7 +649,7 @@ a:hover {
 
   .hero-img {
     display: none; } }
-@media screen and (max-height: 740px) {
+@media screen and (max-height: 700px) {
   .button {
     text-align: center;
     font-family: "Duke Fill";
@@ -662,6 +662,9 @@ a:hover {
 
   .hero-mobile img {
     margin-bottom: 0px; }
+
+  .hero-mobile {
+    margin-top: 0px; }
 
   .hero-content {
     height: 480px; } }
@@ -693,7 +696,7 @@ a:hover {
 .welcome-stats li {
   line-height: 1;
   float: left;
-  padding: 30px;
+  padding: 30px 75px;
   font-size: 56px;
   color: #eaa001; }
 
