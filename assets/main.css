@@ -605,6 +605,9 @@ html, body {
   width: 292px;
   text-align: center; }
 
+.maps {
+  width: 90% !important; }
+
 .day-buttons h2 {
   margin-top: 30px;
   margin-bottom: 0px; }
@@ -724,6 +727,9 @@ a:hover {
     float: none; } }
 .ctr-div {
   text-align: center; }
+
+.automargin {
+  margin: auto; }
 
 .map-img {
   margin: auto; }
